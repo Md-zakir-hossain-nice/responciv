@@ -1,468 +1,379 @@
-*{
-    margin: 0;
-    padding: 0;
+:root{
+
+}
+html{
     box-sizing: border-box;
-    text-decoration: none;
-    border: 0;
-    outline: 0;
-    font-family:"Oswald", sans-serif;
-    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+
+    
     
 }
+body{
+    background-color: rgba(57, 59, 59, 0.418);
+    
+}
+main{
+    line-height: 1.4rem;
+}
 
-/*--=======================Header part start================--*/
+
+img{
+    max-width: 100%;
+    
+}
 .row{
-    width: 90%;
-    margin: auto;
     display: grid;
-    grid-template-columns: 1fr 5fr 1.5fr ;
-    line-height: 60px;
-    gap: 10px;
-
+    background-color:#2B2B2B;
+    grid-gap: 10px;
+    grid-template-areas: 
+    " logo-1 manu-1  sercebar-1";
 }
-#bag-1{
-    background-color: #2C2C2C;
-}
+/*-------ROW-----*/
 
-.logo-1{
-text-align: center;
 
+.manu-1 ul{
+    display: grid;
+    padding: 15px;
+    list-style: none;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
 }
-.logo-1 img{
-    width: 80px;
-    margin: auto;
-    margin-top: 20px;
-}
-.sercebar-1{
-    text-align: right;
-    padding-right: 40px;
-
-}
-
-.sercebar-1 img{
-    width:20px;
-    margin-top: 35px;
+.manu-1 a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 5px 10px;
     cursor: pointer;
 }
 
-.manu-1 ul{
-    text-align: center;
-    margin-top: 15px;
+.manu-1 a:hover{
+    background-color: rgb(58, 56, 52);
+    box-shadow: #3e3d3d 2px 2px;
+    border-radius: 3px;
 }
-
-.manu-1 ul li{
-    display: inline;
-    word-spacing: 40px;
-    
-    
-}
-
-.manu-1 ul li a{
-    text-decoration: none;
-    font-size: 16px;
-    color: white;
-    padding: 5px 15px;
-    border: rgba(101, 92, 92, 0.092) 1px solid;
-
-}
-
-.manu-1 ul li a:hover{
-    background-color: rgba(148, 150, 150, 0.431);
-    box-shadow: rgba(70, 68, 68, 0.401) 4px 4px;
-}
-
-/*--=======================Header part End================--*/
-
-/*--=======================body  part-1 start================--*/
-
-.row-1{
-    width: 90%;
+.sercebar-1{
+    max-width: 20px;
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    line-height:200px;
+    cursor: pointer;
+
 }
 
-.man{
-    position: relative;
+.sercebar-1:hover{
+    cursor: pointer;
+    box-shadow: #3e3d3d 2px 2px;
+}
+/*------ROW-1-------*/
+.row-1{
+    display: grid;
+    background-color:#2B2B2B;
+    grid-gap: 10px;
+    grid-template-areas: 
+    " logo-1 manu-1  sercebar-1";
+    background-image: url(../PHOTOS/man.png);
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-size:contain;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
 }
 .ti{
-    position: absolute;
-    margin-top:180px;
-    padding-left:70px;
-    font-size: 70px;
-    color: white;
-    font-family: "Oswald";
-    
+    color: aliceblue;
+    font-size: 50px;
+    padding-top: 60px ;
 }
-
 .lo-1{
-    position: absolute;
-    margin-top: 320px;
-    display: grid;
-    grid-template-columns: 3fr 3fr 1.5fr ;
+    color: aliceblue;
     font-size: 20px;
-    line-height: 2rem;
-    font-family:"Oswald";
-    margin-left: 75px;
-    color: white;
 }
-
 .reg-1{
-    position: absolute;
-    margin: 340px 80px;
+    align-items: start;
 }
 
 .reg-1 ul li{
-display: inline;
-
+display: inline-block;
 }
 
-.reg-1 ul li a{
+.reg-1 ul a{
+    color: aliceblue;
     text-decoration: none;
-    font-size: 16px;
-    color: white;
-    padding: 4px 25px;
+    font-size: 20px;
     background-color: #FF6306;
-    border: rgba(101, 92, 92, 0.092) 1px solid;
-    border-radius: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0px;
+    padding: 10px 30px;
+
 }
 
-.reg-1 ul li a:hover{
-    background-color: rgba(148, 150, 150, 0.431);
-    box-shadow: rgba(70, 68, 68, 0.401) 4px 4px;
+
+.reg-1 ul a:hover{
+    background-color:#3e3d3d;
+    box-shadow: #2B2B2B 2px 2px;
 }
 
-/*--=======================body  part-1 End================--*/
+/*------ROW-2-------*/
 
-/*--=======================body  part-2 start================--*/
-
-#bag-3{
-    background-color: #FF6306;
-    padding-bottom: 50px;
-    width: 90%;
-    margin: auto;
-    gap: 20px;
-}
 .row-2{
-    width: 90%;
-    margin: auto;
+    min-height: 600px;
+    background-color: #FF6306;
+    background-image:url(../PHOTOS/laer-bam.png);
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
 }
 
 .ti-1{
-    grid-row: 1;
-    grid-column: 1/-1;
     text-align: center;
-    font-size: 30px;
-    color: white;
-    margin-top: 20px; 
+    margin: auto;
+    font-size: 50px;
+    color: aliceblue;
 }
-
 .lo-2{
-    grid-row: 2;
-    grid-column: 2/-2;
     text-align: center;
+    margin: auto;
     font-size: 20px;
-    color: white;
+    color: aliceblue;
     margin-top: 20px;
 }
-
+.para-01{
+    display: grid;
+    grid-template-areas: 
+    "para-1 para-1 para-1";
+    grid-gap: 20px;
+    justify-content: center;
+    z-index: 10;
+}
 .para-1{
-    grid-row: 3;
-    grid-column: 2/-4; 
+    padding: 10px;
+    box-shadow: #6e4c4c92 5px 5px 5px 5px;
+    max-width: 200px;
+    height: 325px;
     text-align: center;
-    background-color: #2B2B2B;
-    gap: .5fr;
-    color: white;
-}
-.para-2{
-    grid-row: 3;
-    grid-column: 3/-3;
-    text-align: center;
-    background-color: #2B2B2B;
-    color: white;
 }
 
-.para-3{
-    grid-row: 3;
-    grid-column: 4/-2;
-    text-align: center;
-    background-color: #2B2B2B;
-    color: white;
+.bag-1 {
+    background-color: #3e3d3d;
+    color: aliceblue;
+}
+.tia-1{
+    margin: 0px;
+    padding: 0px;
 }
 
-.dan{
-    
-    grid-column: 1/-3;
-    grid-row: 4/-1;
-    background-image: url(/PHOTOS/laer-bam.png);
-    float: left;
-}
 
-/*--=======================body  part-2 End================--*/
 
-/*--=======================body  part-3 start================--*/
-
+/*------ROW-3-------*/
 
 .row-3{
-    width: 90%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    
-    
-}
-#bag-31{
+    min-height: 600px;
     background-color: #2B2B2B;
+    display: grid;
+    grid-gap: 10px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
 }
 
 .ti-11{
-    grid-row: 1;
-    grid-column: 1/-1;
-    text-align: center;
+    margin: auto;
     font-size: 50px;
-    color: white;
-    margin-top: 40px; 
+    margin-top: 50px;
+    color: aliceblue;
+
+}
+.lo-21{
+    margin: auto;
+    color: aliceblue;
 }
 
-.lo-21{
-    grid-row: 2;
-    grid-column: 2/-2;
-    text-align: center;
-    font-size: 20px;
-    color: white;
-    padding: 40px;
+.para-02{
+    display: grid;
+    grid-template-areas: 
+    "para-1 para-1 para-1";
+    grid-gap: 20px;
+    justify-content: center;
+    padding-bottom: 50px;
+    color: aliceblue;
 }
 
 .para-11{
-    grid-row: 3;
-    grid-column: 2/-4; 
+    padding: 10px;
+    box-shadow: #6e4c4c92 5px 5px 5px 5px;
+    max-width: 200px;
+    height: 325px;
     text-align: center;
-    color: white;
-    background-color: #FF6306;
-    
-}
-.para-21{
-    grid-row: 3;
-    grid-column: 3/-3;
-    text-align: center;
-    color: white;
     background-color: #FF6306;
 }
 
-.para-31{
-    grid-row: 3;
-    grid-column: 4/-2;
-    text-align: center;
-    color: white;
-    background-color: #FF6306;
-}
-
-.sobi-11{
-    width: 50px;
-    margin: 15px;
-}
-
-.sobi-21{
-    width: 50px;
-    margin: 15px;
-}
-
-.sobi-31{
-    width: 50px;
-    margin: 15px;
-}
-
-.loa-11{
-    font-size: 10px;
-}
-.loa-21{
-    font-size: 10px;
-}
-.loa-31{
-    font-size: 10px;
-}
 .dolar-1{
-    background-color: #2C2C2C;
-    border: #FF6306 solid 2px;
-}
-.ddd{
-    grid-row: 4;
-    grid-column: 1/-1;
-    height: 40px;
-}
+    background-color: #2B2B2B;
+    border-radius: 2px;
+    cursor: pointer;
 
-/*--=======================body  part-3 End================--*/
-
-
-/*--=======================body  part-4 start================--*/
-#bag-41{
-    background-color: #FF6306;
 }
+/*------ROW-4-------*/
 .row-4{
-    width: 90%;
-    margin: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: 
+    grid-template-areas:
+    " ima-1 para-61";
 }
-
-
-.her{
-    color: white;
-    margin-top: 100px;
-    text-align:left;
-    font-size: 30px;
+.ima-1{
+    min-width: 320px;
+    background-image: url(../PHOTOS/man-2.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+}
+.para-61{
     padding-left: 50px;
-}
-
-.pa{
-    color: white;
-    text-align:left;
-    padding-left: 50px;
-    font-size: 12px;
-}
-
-.reg-3 ul{
-    margin-left: 50px;
-    margin-top: 30px;
-}
-
-.reg-3 ul li{
-    display: inline;
-
-}
-
-.reg-3 ul li a{
-    text-decoration: none;
-    font-size: 16px;
-    color: white;
-    padding: 5px 15px;
-    border: rgba(101, 92, 92, 0.092) 1px solid;
-    background-color: #2B2B2B;
-    border-radius: 5px;
-}
-
-.reg-3 ul li a:hover{
-    background-color: rgba(148, 150, 150, 0.431);
-    box-shadow: rgba(70, 68, 68, 0.401) 4px 4px;
-    transition: .2s;
-}
-
-/*--=======================body  part-4 End================--*/
-
-/*--=======================body  part-5 start================--*/
-#bag-51{
     background-color: #FF6306;
+    color: aliceblue;.
 }
-.row-5{
-    width: 90%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    
-}
-
-
-.her-1{
-    color: white;
-    margin-top: 50px;
-    text-align:left;
-    margin-left: 80px;
+.tia-62{
     font-size: 30px;
-    padding-right: 50px;
+    margin-top: 80px;
+
 }
 
-.pa-51{
-    color: white;
-    text-align:left;
-    margin-left: 80px;
-    font-size: 12px;
+.reg-2{
+    margin-top: 50px;
 }
-.reg-51{
-margin-left: 80px;
-margin-top: 30px;
+.reg-2 ul{
+    margin: 0px;
+    padding-left: 0px;
 }
 
-.reg-51 ul{
-    
-    margin-right: 40px;
-    margin-top: 15px;
+.reg-2 ul li{
+display: inline-block;
 }
 
-.reg-51 ul li{
-    display: inline;
-}
-
-.reg-51 ul li a{
+.reg-2 ul a{
+    color: aliceblue;
     text-decoration: none;
-    font-size: 16px;
-    color: white;
-    padding: 5px 15px;
-    border: rgba(101, 92, 92, 0.092) 1px solid;
-    background-color: #2B2B2B;
+    font-size: 20px;
+    background-color: #343231;
     border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0px;
+    padding: 10px 30px;
+
 }
 
-.reg-51 ul li a:hover{
-    background-color: rgba(148, 150, 150, 0.431);
-    box-shadow: rgba(70, 68, 68, 0.401) 4px 4px;
-    transition: .2s;
+
+.reg-2 ul a:hover{
+    background-color:#3e3d3d;
+    box-shadow: #2B2B2B 2px 2px;
 }
 
-/*--=======================body  part-5 End================--*/
 
-/*--=======================body  part-6 start================--*/
-.row-6{
-    width: 90%;
-    margin: auto;
+/*------ROW-5-------*/
+.row-4{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1fr,1fr 1fr);
-    line-height: 30px;
-    height: 400px;
+    grid-template-areas:
+    " ima-1 para-61";
+}
+.ima-2{
+    min-width: 320px;
+    background-image: url(../PHOTOS/man-3.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+}
+.para-61{
+    padding-left: 50px;
+    background-color: #FF6306;
+    color: aliceblue;.
+}
+.tia-62{
+    font-size: 30px;
+    margin-top: 80px;
+
 }
 
-#bag-61{
-    background-color: #2B2B2B;
+.reg-2{
+    margin-top: 50px;
 }
+.reg-2 ul{
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.reg-2 ul li{
+display: inline-block;
+}
+
+.reg-2 ul a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #343231;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0px;
+    padding: 10px 30px;
+
+}
+
+
+.reg-2 ul a:hover{
+    background-color:#3e3d3d;
+    box-shadow: #2B2B2B 2px 2px;
+}
+
+/*------ROW-6-------*/
+.row-6{
+    display: grid;
+    background-color:#343231;
+    
+}
+
+
 .our{
-    grid-row: 1;
-    grid-column: 1/-1;
+    display: grid;
     margin: auto;
     text-align: center;
     margin-top: 30px;
     color: white;
+    font-size: 30px;
 }
 
 .LORM{
-    grid-row: 2;
-    grid-column: 2/-2;
-    padding: 0px 80px;
     color: white;
     font-size: 12px;
     text-align: center;
 }
+.club-2{
+    display: grid;
+    grid-template-areas: 
+    "CLUB-1 CLUB-2 CLUB-3 ";
+    margin: 50PX;
+}
 
 .CLUB-1{
-    grid-row: 3;
-    grid-column: 2/-4;
     text-align: center;
     color: white;
+    font-size: 20px;
 }
 
 .CLUB-2{
-    grid-row: 3;
-    grid-column: 3/-3;
+    font-size: 20px;
     text-align: center;
     color: white;
 }
 .CLUB-3{
-    grid-row: 3;
-    grid-column: 4/-2;
+    font-size: 20px;
     text-align: center;
     color: white;
 }
@@ -472,1713 +383,347 @@ margin-top: 30px;
 
 
 .row-7{
-    width: 90%;
-    margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
-    
-}
-
-.imga-1{
-    grid-row: 1;
-    grid-column: 1/-1;
-    height: 600px;
-    
-    
-
+    background-image:url(../PHOTOS/man-3.png);
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    grid-template-areas: 
+    "LORM-2 our-2";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
 }
 .colar-1{
-    grid-row: 1;
-    grid-column: 1/-1;
-    height: 600px;
-    background-color: #58060696;
-    opacity: .8;
-}
+    background-color: #5c250558;
+    height: 900px;
 
+}
 .LORM-2{
-    grid-row: 1;
-    grid-column: 2/-2;
     text-align: center;
-    margin-top: 200px;
     color: rgb(255, 255, 255);
+   justify-items: center;
+   margin-top: 400PX;
 }
 
 .our-2{
-    grid-row: 1;
-    grid-column: 2/-2;
+    
     text-align: center;
-    margin-top: 300px;
     color: rgb(254, 254, 254);
+    font-size: 30px;
 }
 
 /*--=======================body  part-7 End================--*/
 
+
 /*--=======================body  part-8 srart================--*/
 .row-8{
-    width: 90%;
-    margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-.BAG-1{
-    grid-row: 1;
-    grid-column: 1/-1;
-    height: 450px;
+    margin: auto;
     background-color: #FF6306;
+    min-height: 400px;
+    background-image: url(../PHOTOS/laer-bam.png);
+    background-repeat: no-repeat;
+    background-position:left;
 }
-.dan-4{
-    grid-row: 1;
-    grid-column: 2/-1;
-    height: 450px;
-}
-.bam-4{
-    grid-row: 1;
-    grid-column: 1/-2;
-    height: 450px;
-}
+
 .subsc-1{
-    grid-row: 1;
-    grid-column: 2/-2;
+    margin: auto;
     text-align: center;
-    margin-top: 100px;
-    color: white;
+    color: aliceblue; 
 }
 
 .iprem-1{
-    grid-row: 1;
-    grid-column: 2/-2;
     text-align: center;
-    margin-top: 160px;
     color: white;
     font-size: 15px;
 }
+
 .sub-9{
-    grid-row: 1;
-    grid-column: 2/-2;
-    text-align:left;
-    margin-left: 40px;
-    width: 200px;
-    margin-top: 300px;
+    
+    text-align:left; 
+    display: flex;
+    margin: auto;
 }
 .email-1{
     height: 30px;
-    padding-left: 5px;
     border: #6a6868 2px solid;
 }
 .mit-5{
-    grid-row: 1;
-    grid-column: 2/-2;
-    margin-left: 240px;
-    width: 90px;
-    margin-top: 300px;
+    height: 30px;
     
 }
 
 
 .submite-5{
-    padding: 5px;
+    padding: 8px;
     background-color: #2C2C2C;
     color: white;
     cursor:pointer;
+    
+    
 }
 /*--=======================body  part-8 End================--*/
 /*--=======================  footer-Stat================--*/
-
-
 .footer-1{
-    width: 90%;
-    margin: auto;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-}
-.ba-1{
-    grid-row: 1;
-    grid-column: 1/-1;
-    background-color: #2B2B2B;
-    height: 400px;
-}
-
-
-.musi{
-    grid-row: 1;
-    grid-column: 1/-4;
-    color: white;
-    margin-top: 50px;
-    margin-left: 50px;
-}
-.dolor-1{
-    grid-row: 1;
-    grid-column: 1/-5;
-    color: white;
-    margin-top: 110px;
-    margin-left: 50px;
-    font-size: 20px;
-}
-
-.bar-11{
-    grid-row: 1;
-    grid-column: 1/-4;
-    width: 40px;
-    background-color: #2B2B2B;
-    margin-top: 280px;
-    margin-left: 50px;
-}
-
-.bar-12{
-    grid-row: 1;
-    grid-column: 1/-4;
-    width: 40px;
-    background-color: #2B2B2B;
-    margin-top: 280px;
-    margin-left: 100px;
-}
-.bar-13{
-    grid-row: 1;
-    grid-column: 1/-4;
-    width: 40px;
-    background-color: #2B2B2B;
-    margin-top: 280px;
-    margin-left: 150px;
-}
-.bar-14{
-    grid-row: 1;
-    grid-column: 1/-4;
-    width: 40px;
-    background-color: #2B2B2B;
-    margin-top: 280px;
-    margin-left: 200px;
-}
-
-.ab-1{
-    grid-row: 1;
-    grid-column: 4/-3;
-    margin-top: 50px;
+    grid-template-areas: 
+    "mu-1 mu-2 mu-3 mu-4";
+    margin: auto;
     text-align: center;
-    color: white;
+    color: aliceblue;
+    background-color: #2C2C2C;
+    min-height: 400px;
+    grid-gap: 10px;
 }
 
-.ab-2{
-    grid-row: 1;
-    grid-column: 4/-3;
-    margin-top: 110px;
-    text-align: center;
-    color: white;
-    padding: 5px;
+.barw-1{
+    display: flex;
+    float:left;
+}
+.mu-1{
+    
+    box-shadow: #524d4d58 2px 2px 2px 2px;
 }
 
-.ab-3{
-    grid-row: 1;
-    grid-column: 5/-2;
-    margin-top: 50px;
-    text-align: center;
-    color: white;
-}
-
-.ab-4{
-    grid-row: 1;
-    grid-column: 5/-2;
-    margin-top: 110px;
-    text-align: center;
-    color: white;
-    padding: 5px;
-}
-
-.ab-5{
-    grid-row: 1;
-    grid-column: 6/-1;
-    margin-top: 50px;
-    text-align: center;
-    color: white;
-}
-
-.ab-6{
-    grid-row: 1;
-    grid-column: 6/-1;
-    margin-top: 110px;
-    text-align: center;
-    color: white;
-    padding: 5px;
+.barw-1{
+    margin: auto;
+    grid-columns:1/-1;
+    grid-gap: 20px;
 }
 .ZAKIR{
-    grid-row: 1;
-    grid-column: 1/-1;
-    margin-top: 360px;
-    text-align: center;
-    color: white;
-    background-color: #4a4646;
-    padding: 7px;
-    font-size: 30px;
+    margin: auto;
+    font-size: 20PX;
 }
-
 /*--=======================  footer-End================--*/
 
+/*--================== max-media width-700==============--*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 600px){
-    
-    #bag-1{
-        background-color: #5c5959;
+@media(max-width:700px){
+    .row{
+        display: grid;
+        grid-gap: 5px;
+        grid-template-areas: 
+        'logo-1'
+        'manu-1'
+        'sercebar-1';
     }
-
     .logo-1{
-    text-align: center;
-
-    }
-    .logo-1 img{
-        width: 50px;
+        max-width: 100px;
         margin: auto;
         margin-top: 20px;
     }
-    .sercebar-1{
-        text-align: right;
-        padding-right: 20px;
-
+    .manu-1 ul{
+        display: grid;
+        grid: gap 1px;
+        padding: 5px;
+        list-style: none;
+        grid-template-columns: repeat(5,1fr);
+        text-align: center;
     }
-
-    .sercebar-1 img{
-        width:20px;
-        margin-top: 35px;
+    .manu-1 a{
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 5px 10px;
         cursor: pointer;
     }
-
-    .manu-1 ul{
-        text-align: center;
-        margin-top: 15px;
-    }
-
-    .manu-1 ul li{
-        display: inline;
-        word-spacing: 5px;
-        
-        
-    }
-
-    .manu-1 ul li a{
-        text-decoration: none;
-        font-size: 12px;
-        color: white;
-        padding: 2px 10px;
-        border: rgba(101, 92, 92, 0.092) 1px solid;
-
-    }
-
-    .manu-1 ul li a:hover{
-        background-color: rgba(148, 150, 150, 0.431);
-        box-shadow: rgba(70, 68, 68, 0.401) 4px 4px;
-    }
-
-    /*--=======================Header part End================--*/
-
-    /*--=======================body  part-1 start================--*/
-
-    .row-1{
-        width: 90%;
+    
+    .sercebar-1{
+        max-width: 20px;
         margin: auto;
-        display: grid;
-        grid-template-columns: 1fr;
-        line-height:200px;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    .row-1{
+        background-size: cover;
+        background-position:right;
     }
 
-    .man{
-        position: relative;
+    .para-01{
+        grid-template-areas: 
+        'para-1 para-1';
     }
-    .ti{
-        position: absolute;
-        margin-top:1px;
-        padding-left:10px;
-        font-size: 20px;
-        color: white;
-        font-family: "Oswald";
+    .para-02{
+        grid-template-areas: 
+        "para-1 para-1";
+    }
+
+
+    .row-4{
+        display: grid;
+        grid-template-areas:
+        " ima-1";
+    }
+
+    .row-7{
+
+        background-image:url(../PHOTOS/man-3.png);
+        background-size: cover;
+        background-position:right;
         
+    }
+
+    .footer-1{
+        grid-template-areas: 
+        "mu-1 mu-2";
+        margin: auto;
+        
+    }
+
+    .ZAKIR{
+        margin: auto;
+        font-size: 15px;
+    }
+}
+
+/*--================== max-media width-500==============--*/
+
+@media(max-width:500px){
+    
+    .manu-1 ul{
+        grid-template-columns:1fr;
+        text-align: center;
+        grid-gap: 10px;
+        
+    }
+
+    .manu-1 a{
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 15px;
+        background-color: #874c2ab4;
+        cursor: pointer;
+        padding: 0px 60px;
+        border-radius: 5px;
+    }
+
+    .ti{
+        font-size: 30px;
     }
 
     .lo-1{
-        position: absolute;
+
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .reg-1 ul a{
+        font-size: 15px;
+        background-color: #FF6306;
+        border-radius:2px;
+        cursor: pointer;
+        margin-top: 5px;
+        padding: 10px 10px;
+    }
+    .row-2{
+        padding: 10px;
+    }
+
+    .ti-1{
+        text-align: center;
+        margin: auto;
+        font-size: 35px;
+        color: aliceblue;
+    }
+    .para-01{
+        display: grid;
+        grid-template-areas: 
+        "para-1 para-1 ";
+        grid-gap: 5px;
+        justify-content: center;
+
+    }
+    .our h1{
+        margin: auto;
+        font-size: 20px;
+    }
+    .LORM{
+        color: white;
+        font-size: 8px;
+        text-align: center;
+    }
+
+    .club-2{
+        display: grid;
+        grid-template-areas: 
+        "CLUB-1 CLUB-2 ";
+        margin: 50PX;
+    }
+
+    .our-2{
+        text-align: center;
+        color: rgb(254, 254, 254);
+        font-size: 20px;
+    }
+    
+    .ima-1{
+        background-image: url(../PHOTOS/man-2.png);
+        background-size: cover;
+        background-position: center;
+        min-height: 600px;
+    }
+
+    .ima-2{
+        background-image: url(../PHOTOS/man-3.png);
+        background-size: cover;
+        background-position: center;
+        min-height: 600px;
+    }
+
+    .para-61{
+        background-color: #FF6306;
+        color: aliceblue;
+        
+    }
+
+    .tia-62{
+        font-size: 30px;
         margin-top: 80px;
-        display: grid;
-        grid-template-columns: 3fr 3fr 1.5fr ;
-        font-size: 10px;
-        line-height: 1rem;
-        font-family:"Oswald";
-        margin-left: 150px;
-        color: white;
-    }
-
-    .reg-1{
-        position: absolute;
-        margin:35px 8px;
-    }
-
-    .reg-1 ul li{
-    display: inline;
-
-    }
-
-    .reg-1 ul li a{
-        text-decoration: none;
-        font-size: 12px;
-        color: white;
-        padding: 2px 8px;
-        background-color: #FF6306;
-        border: rgba(101, 92, 92, 0.092) 1px solid;
-        border-radius: 2px;
-    }
-
-    .reg-1 ul li a:hover{
-        background-color: rgba(148, 150, 150, 0.431);
-        box-shadow: rgba(70, 68, 68, 0.401) 4px 4px;
-    }
-
-    /*--=======================body  part-1 End================--*/
-
-    /*--=======================body  part-2 start================--*/
-
-    #bag-3{
-        background-color: #FF6306;
-        padding-bottom: 50px;
-        width: 90%;
         margin: auto;
-        gap: 5px;
-    }
-    .row-2{
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
+    
     }
 
-    .ti-1{
-        grid-row: 1;
-        grid-column: 2/-2;
-        text-align: center;
-        font-size: 15px;
-        color: white;
-        margin-top: 20px; 
-    }
-
-    .lo-2{
-        grid-row: 2;
-        grid-column: 2/-2;
-        text-align: center;
-        font-size: 15px;
-        color: white;
-
-    }
-
-    .para-1{
-        grid-row: 3;
-        grid-column: 2/-4; 
-        text-align: center;
-        background-color: #2B2B2B;
-        color: white;
-    }
-    .para-2{
-        grid-row: 3;
-        grid-column: 3/-3;
-        text-align: center;
-        background-color: #2B2B2B;
-        color: white;
-    }
-    .tia-1{
-        font-size: 10px;
-    }
-    .tia-2{
-        font-size: 10px;
-    }
-    .tia-3{
-        font-size: 10px;
-    }
-    .loa-1{
-        font-size: 15px;
-    }
-    .loa-2{
-        font-size: 15px;
-    }
-    .loa-3{
-        font-size: 15px;
-    }
-
-    .para-3{
-        grid-row: 3;
-        grid-column: 4/-2;
-        text-align: center;
-        background-color: #2B2B2B;
-        color: white;
-    }
-
-    .dan{
-        
-        grid-column: 1/-3;
-        grid-row: 4/-1;
-        background-image: url(/PHOTOS/laer-bam.png);
-        float: left;
-    }
-
-    /*--=======================body  part-2 End================--*/
-
-    /*--=======================body  part-3 start================--*/
-
-
-    .row-3{
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        
-        
-    }
-    #bag-31{
-        background-color: #2B2B2B;
-    }
-
-    .ti-11{
-        grid-row: 1;
-        grid-column: 1/-1;
-        text-align: center;
-        font-size: 40px;
-        color: white;
-        margin-top: 20px;
-        
-    }
-
-    .lo-21{
-        grid-row: 2;
-        grid-column: 1/-1;
-        text-align: center;
-        font-size: 20px;
-        color: white;
-        padding: 20px;
-    }
-
-    .para-11{
-        grid-row: 3;
-        grid-column: 2/-4; 
-        text-align: center;
-        color: white;
-        background-color: #FF6306;
-        
-    }
-    .para-21{
-        grid-row: 3;
-        grid-column: 3/-3;
-        text-align: center;
-        color: white;
-        background-color: #FF6306;
-    }
-
-    .para-31{
-        grid-row: 3;
-        grid-column: 4/-2;
-        text-align: center;
-        color: white;
-        background-color: #FF6306;
-    }
-
-    .sobi-11{
-        width: 40px;
-        margin: 5px;
-    }
-
-    .sobi-21{
-        width: 40px;
-        margin: 5px;
-    }
-
-    .sobi-31{
-        width: 40px;
-        margin: 15px;
-    }
-
-    .loa-11{
-        font-size: 10px;
-    }
-    .loa-21{
-        font-size: 10px;
-    }
-    .loa-31{
-        font-size: 10px;
-    }
-    .dolar-1{
-        background-color: #2C2C2C;
-        border: #FF6306 solid 2px;
-    }
-    .ddd{
-        grid-row: 4;
-        grid-column: 1/-1;
-        height: 40px;
-    }
-
-    /*--=======================body  part-3 End================--*/
-
-
-    /*--=======================body  part-4 start================--*/
-    #bag-41{
-        background-color: #FF6306;
-    }
-    .row-4{
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        background-color: 
-    }
-
-    .her{
-        color: white;
-        margin-top: 50px;
-        text-align:left;
-        font-size: 20px;
-        padding-left: 20px;
-    }
-
-    .pa{
-        color: white;
-        text-align:left;
-        padding-left: 20px;
-        font-size: 12px;
-    }
-
-    .reg-3 ul{
-        margin-left: 10px;
-        margin-top: 30px;
-    }
-
-    .reg-3 ul li{
-        display: inline;
-
-    }
-
-    .reg-3 ul li a{
-        text-decoration: none;
-        font-size: 16px;
-        color: white;
-        padding: 5px 10px;
-        border: rgba(101, 92, 92, 0.092) 1px solid;
-        background-color: #2B2B2B;
-        border-radius: 5px;
-    }
-
-    .reg-3 ul li a:hover{
-        background-color: rgba(148, 150, 150, 0.431);
-        box-shadow: rgba(70, 68, 68, 0.401) 4px 4px;
-        transition: .2s;
-    }
-
-    /*--=======================body  part-4 End================--*/
-
-    /*--=======================body  part-5 start================--*/
-    #bag-51{
-        background-color: #FF6306;
-    }
-    .row-5{
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        
-    }
-
-   
-    .her-1{
-        color: white;
-        margin-top: 50px;
-        text-align:left;
-        margin-left: 10px;
-        font-size: 20px;
-        
-    }
-
-    .pa-51{
-        color: white;
-        text-align:left;
-        margin-left: 10px;
-        font-size: 10px;
-    }
-    .reg-51{
-    margin-left: 10px;
-    margin-top: 15px;
-    }
-
-    .reg-51 ul{
-        
-        margin-right: 40px;
-        margin-top: 15px;
-    }
-
-    .reg-51 ul li{
-        display: inline;
-    }
-
-    .reg-51 ul li a{
-        text-decoration: none;
-        font-size: 12px;
-        color: white;
-        padding: 5px 15px;
-        border: rgba(101, 92, 92, 0.092) 1px solid;
-        background-color: #2B2B2B;
-        border-radius: 5px;
-    }
-
-    .reg-51 ul li a:hover{
-        background-color: rgba(148, 150, 150, 0.431);
-        box-shadow: rgba(70, 68, 68, 0.401) 4px 4px;
-        transition: .2s;
-    }
-
-    /*--=======================body  part-5 End================--*/
-
-    /*--=======================body  part-6 start================--*/
-    .row-6{
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(1fr,1fr 1fr);
-        line-height: 30px;
-        height: 400px;
-    }
-
-    #bag-61{
-        background-color: #2B2B2B;
-    }
-    .our{
-        grid-row: 1;
-        grid-column: 1/-1;
-        margin: auto;
-        text-align: center;
-        margin-top: 10px;
-        color: white;
-    }
-
-    .LORM{
-        grid-row: 2;
-        grid-column: 1/-1;
-        padding: 0px 50px;
-        color: white;
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .CLUB-1{
-        grid-row: 3;
-        grid-column: 2/-4;
-        text-align: center;
-        color: white;
-    }
-
-    .CLUB-2{
-        grid-row: 3;
-        grid-column: 3/-3;
-        text-align: center;
-        color: white;
-    }
-    .CLUB-3{
-        grid-row: 3;
-        grid-column: 4/-2;
-        text-align: center;
-        color: white;
-    }
-    /*--=======================body  part-6 End================--*/
-
-    /*--=======================body  part-7 Start================--*/
-
-
-    .row-7{
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        
-        
-    }
-
-    .imga-1{
-        grid-row: 1;
-        grid-column: 1/-1;
-        height: 600px;
-        
-        
-
-    }
-    .colar-1{
-        grid-row: 1;
-        grid-column: 1/-1;
-        height: 600px;
-        background-color: #58060696;
-        opacity: .8;
-    }
-
-    .LORM-2{
-        grid-row: 1;
-        grid-column: 2/-2;
-        text-align: center;
-        margin-top: 200px;
-        color: rgb(255, 255, 255);
-    }
-
-    .our-2{
-        grid-row: 1;
-        grid-column: 2/-2;
-        text-align: center;
-        margin-top: 300px;
-        color: rgb(254, 254, 254);
-    }
-
-    /*--=======================body  part-7 End================--*/
-
-    /*--=======================body  part-8 srart================--*/
-    .row-8{
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .BAG-1{
-        grid-row: 1;
-        grid-column: 1/-1;
-        height: 450px;
-        background-color: #FF6306;
-    }
-    .dan-4{
-        grid-row: 1;
-        grid-column: 1/-1;
-        height: 400px;
-    }
-    .bam-4{
-        grid-row: 1;
-        grid-column: 1/-1;
-        height: 450px;
-    }
-    .subsc-1{
-        grid-row: 1;
-        grid-column: 2/-2;
-        text-align: center;
-        margin-top: 100px;
-        color: white;
-    }
-
-    .iprem-1{
-        grid-row: 1;
-        grid-column: 2/-2;
-        text-align: center;
-        margin-top: 160px;
-        color: white;
-        font-size: 15px;
-    }
-    .sub-9{
-        grid-row: 1;
-        grid-column: 2/-2;
-        text-align:left;
-        margin-left: 5px;
-        width: 150px;
-        margin-top: 300px;
-    }
-    .email-1{
-        height: 30px;
-        padding-left: 5px;
-        border: #6a6868 2px solid;
-    }
-    .mit-5{
-        grid-row: 1;
-        grid-column: 2/-2;
-        margin-left: 150px;
-        width: 80px;
-        margin-top: 300px;
-        
-    }
-
-
-    .submite-5{
-        padding: 5px;
-        background-color: #2C2C2C;
-        color: white;
-        cursor:pointer;
-    }
-    /*--=======================body  part-8 End================--*/
-    /*--=======================  footer-Stat================--*/
-
-
-    .footer-1{
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
     .ba-1{
-        grid-row: 1;
-        grid-column: 1/-1;
-        background-color: #2B2B2B;
-        height: 370px;
-    }
-
-
-    .musi{
-        grid-row: 1;
-        grid-column: 1/-5;
-        color: white;
-        margin-top: 10px;
-        margin-left: 10px;
-        font-size: 5px;
-
-    }
-    .dolor-1{
-        grid-row: 1;
-        grid-column: 1/-5;
-        color: white;
-        margin-top: 40px;
-        margin-left: 10px;
         font-size: 10px;
     }
 
-    .bar-11{
-        grid-row: 1;
-        grid-column: 1/-1;
-        width: 40px;
-        background-color: #2B2B2B;
-        margin-top: 200px;
-        margin-left: 20px;
-    }
-
-    .bar-12{
-        grid-row: 1;
-        grid-column: 1/-1;
-        width: 40px;
-        background-color: #2B2B2B;
-        margin-top: 200px;
-        margin-left: 65px;
-    }
-    .bar-13{
-        grid-row: 1;
-        grid-column: 1/-1;
-        width: 40px;
-        background-color: #2B2B2B;
-        margin-top: 200px;
-        margin-left: 110px;
-    }
-    .bar-14{
-        grid-row: 1;
-        grid-column: 1/-1;
-        width: 40px;
-        background-color: #2B2B2B;
-        margin-top: 200px;
-        margin-left: 155px;
+    .dolor-1 p{
+        font-size: 15px;
+        padding: 2px;
     }
 
     .ab-1{
-        grid-row: 1;
-        grid-column: 2/-4;
-        margin-top: 10px;
-        text-align: center;
-        color: white;
-        font-size: 8px;
-    }
-
-    .ab-2{
-        grid-row: 1;
-        grid-column: 2/-4;
-        margin-top: 40px;
-        text-align: center;
-        color: white;
-        padding: 5px;
         font-size: 10px;
     }
-
-    .ab-3{
-        grid-row: 1;
-        grid-column: 3/-3;
-        margin-top: 10px;
-        text-align: center;
-        color: white;
-        font-size: 7px;
-    }
-
-    .ab-4{
-        grid-row: 1;
-        grid-column: 3/-3;
-        margin-top: 40px;
-        text-align: center;
-        color: white;
-        padding: 5px;
-        font-size: 10px;
-    }
-
-    .ab-5{
-        grid-row: 1;
-        grid-column: 4/-2;
-        margin-top: 10px;
-        text-align: center;
-        color: white;
-        font-size: 10px;
-    }
-
-    .ab-6{
-        grid-row: 1;
-        grid-column: 4/-2;
-        margin-top: 40px;
-        text-align: center;
-        color: white;
-        padding: 5px;
-        font-size: 10px;
-    }
-    .ZAKIR{
-        grid-row: 1;
-        grid-column: 1/-1;
-        margin-top: 360px;
-        text-align: center;
-        color: white;
-        background-color: #4a4646;
-        padding: 7px;
-        font-size: 30px;
-    }
-}
-    /*--=======================  footer-End================--*/
-
-
-
-@media only screen and (min-width: 601px){
     
-    #bag-1{
-        background-color: #5c5959;
-    }
+}
 
-    .logo-1{
-    text-align: center;
 
-    }
-    .logo-1 img{
-        width: 40px;
-        margin: auto;
-        margin-top: 30px;
-    }
-    .sercebar-1{
-        text-align: right;
-        padding-right: 10px;
 
-    }
 
-    .sercebar-1 img{
-        width:20px;
-        margin-top: 35px;
-        cursor: pointer;
-    }
 
-    .manu-1 ul{
-        text-align: center;
-        margin-top: 15px;
-    }
 
-    .manu-1 ul li{
-        display: inline;
-        word-spacing: 5px;
-        
-        
-    }
 
-    .manu-1 ul li a{
-        text-decoration: none;
-        font-size: 12px;
-        color: white;
-        padding: 2px 10px;
-        border: rgba(101, 92, 92, 0.092) 1px solid;
 
-    }
+/*--================== max-media width-500==============--*/
 
-    .manu-1 ul li a:hover{
-        background-color: rgba(148, 150, 150, 0.431);
-        box-shadow: rgba(70, 68, 68, 0.401) 4px 4px;
-    }
 
-    /*--=======================Header part End================--*/
-
-    /*--=======================body  part-1 start================--*/
-
+@media(min-width:701px){
+    
     .row-1{
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr;
-        line-height:200px;
-    }
-
-    .man{
-        position: relative;
-    }
-    .ti{
-        position: absolute;
-        margin-top:40px;
-        padding-left:50px;
-        font-size: 20px;
-        color: white;
-        font-family: "Oswald";
-        
-    }
-
-    .lo-1{
-        position: absolute;
-        margin-top: 180px;
-        display: grid;
-        grid-template-columns: 3fr 3fr 1.5fr ;
-        font-size: 10px;
-        line-height: 1rem;
-        font-family:"Oswald";
-        margin-left: 50px;
-        color: white;
-    }
-
-    .reg-1{
-        position: absolute;
-        margin:150px 50px;
-    }
-
-    .reg-1 ul li{
-    display: inline;
-
-    }
-
-    .reg-1 ul li a{
-        text-decoration: none;
-        font-size: 12px;
-        color: white;
-        padding: 2px 8px;
-        background-color: #FF6306;
-        border: rgba(101, 92, 92, 0.092) 1px solid;
-        border-radius: 2px;
-    }
-
-    .reg-1 ul li a:hover{
-        background-color: rgba(148, 150, 150, 0.431);
-        box-shadow: rgba(70, 68, 68, 0.401) 4px 4px;
-    }
-
-    /*--=======================body  part-1 End================--*/
-
-    /*--=======================body  part-2 start================--*/
-
-    #bag-3{
-        background-color: #FF6306;
-        padding-bottom: 50px;
-        width: 90%;
-        margin: auto;
-        gap: 5px;
-    }
-    .row-2{
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-    }
-
-    .ti-1{
-        grid-row: 1;
-        grid-column: 2/-2;
-        text-align: center;
-        font-size: 15px;
-        color: white;
-        margin-top: 20px; 
-    }
-
-    .lo-2{
-        grid-row: 2;
-        grid-column: 2/-2;
-        text-align: center;
-        font-size: 15px;
-        color: white;
-
-    }
-
-    .para-1{
-        grid-row: 3;
-        grid-column: 2/-4; 
-        text-align: center;
-        background-color: #2B2B2B;
-        color: white;
-    }
-    .para-2{
-        grid-row: 3;
-        grid-column: 3/-3;
-        text-align: center;
-        background-color: #2B2B2B;
-        color: white;
-    }
-    .tia-1{
-        font-size: 10px;
-    }
-    .tia-2{
-        font-size: 10px;
-    }
-    .tia-3{
-        font-size: 10px;
-    }
-    .loa-1{
-        font-size: 15px;
-    }
-    .loa-2{
-        font-size: 15px;
-    }
-    .loa-3{
-        font-size: 15px;
-    }
-
-    .para-3{
-        grid-row: 3;
-        grid-column: 4/-2;
-        text-align: center;
-        background-color: #2B2B2B;
-        color: white;
-    }
-
-    .dan{
-        
-        grid-column: 1/-3;
-        grid-row: 4/-1;
-        background-image: url(/PHOTOS/laer-bam.png);
-        float: left;
-    }
-
-    /*--=======================body  part-2 End================--*/
-
-    /*--=======================body  part-3 start================--*/
-
-
-    .row-3{
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        
-        
-    }
-    #bag-31{
-        background-color: #2B2B2B;
-    }
-
-    .ti-11{
-        grid-row: 1;
-        grid-column: 1/-1;
-        text-align: center;
-        font-size: 40px;
-        color: white;
-        margin-top: 20px;
-        
-    }
-
-    .lo-21{
-        grid-row: 2;
-        grid-column: 1/-1;
-        text-align: center;
-        font-size: 20px;
-        color: white;
-        padding: 20px;
-    }
-
-    .para-11{
-        grid-row: 3;
-        grid-column: 2/-4; 
-        text-align: center;
-        color: white;
-        background-color: #FF6306;
-        
-    }
-    .para-21{
-        grid-row: 3;
-        grid-column: 3/-3;
-        text-align: center;
-        color: white;
-        background-color: #FF6306;
-    }
-
-    .para-31{
-        grid-row: 3;
-        grid-column: 4/-2;
-        text-align: center;
-        color: white;
-        background-color: #FF6306;
-    }
-
-    .sobi-11{
-        width: 40px;
-        margin: 5px;
-    }
-
-    .sobi-21{
-        width: 40px;
-        margin: 5px;
-    }
-
-    .sobi-31{
-        width: 40px;
-        margin: 15px;
-    }
-
-    .loa-11{
-        font-size: 10px;
-    }
-    .loa-21{
-        font-size: 10px;
-    }
-    .loa-31{
-        font-size: 10px;
-    }
-    .dolar-1{
-        background-color: #2C2C2C;
-        border: #FF6306 solid 2px;
-    }
-    .ddd{
-        grid-row: 4;
-        grid-column: 1/-1;
-        height: 40px;
-    }
-
-    /*--=======================body  part-3 End================--*/
-
-
-    /*--=======================body  part-4 start================--*/
-    #bag-41{
-        background-color: #FF6306;
-    }
-    .row-4{
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        background-color: 
-    }
-
     
-    .her{
-        color: white;
-        margin-top: 50px;
-        text-align:left;
-        font-size: 20px;
-        padding-left: 20px;
-    }
-
-    .pa{
-        color: white;
-        text-align:left;
-        padding-left: 20px;
-        font-size: 12px;
-    }
-
-    .reg-3 ul{
-        margin-left: 10px;
-        margin-top: 30px;
-    }
-
-    .reg-3 ul li{
-        display: inline;
-
-    }
-
-    .reg-3 ul li a{
-        text-decoration: none;
-        font-size: 16px;
-        color: white;
-        padding: 5px 10px;
-        border: rgba(101, 92, 92, 0.092) 1px solid;
-        background-color: #2B2B2B;
-        border-radius: 5px;
-    }
-
-    .reg-3 ul li a:hover{
-        background-color: rgba(148, 150, 150, 0.431);
-        box-shadow: rgba(70, 68, 68, 0.401) 4px 4px;
-        transition: .2s;
-    }
-
-    /*--=======================body  part-4 End================--*/
-
-    /*--=======================body  part-5 start================--*/
-    #bag-51{
-        background-color: #FF6306;
-    }
-    .row-5{
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        
-    }
-
-   
-    .her-1{
-        color: white;
-        margin-top: 50px;
-        text-align:left;
-        margin-left: 10px;
-        font-size: 20px;
-        
-    }
-
-    .pa-51{
-        color: white;
-        text-align:left;
-        margin-left: 10px;
-        font-size: 10px;
-    }
-    .reg-51{
-    margin-left: 10px;
-    margin-top: 15px;
-    }
-
-    .reg-51 ul{
-        
-        margin-right: 40px;
-        margin-top: 15px;
-    }
-
-    .reg-51 ul li{
-        display: inline;
-    }
-
-    .reg-51 ul li a{
-        text-decoration: none;
-        font-size: 12px;
-        color: white;
-        padding: 5px 15px;
-        border: rgba(101, 92, 92, 0.092) 1px solid;
-        background-color: #2B2B2B;
-        border-radius: 5px;
-    }
-
-    .reg-51 ul li a:hover{
-        background-color: rgba(148, 150, 150, 0.431);
-        box-shadow: rgba(70, 68, 68, 0.401) 4px 4px;
-        transition: .2s;
-    }
-
-    /*--=======================body  part-5 End================--*/
-
-    /*--=======================body  part-6 start================--*/
-    .row-6{
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(1fr,1fr 1fr);
-        line-height: 30px;
-        height: 400px;
-    }
-
-    #bag-61{
-        background-color: #2B2B2B;
-    }
-    .our{
-        grid-row: 1;
-        grid-column: 1/-1;
-        margin: auto;
-        text-align: center;
-        margin-top: 10px;
-        color: white;
-    }
-
-    .LORM{
-        grid-row: 2;
-        grid-column: 1/-1;
-        padding: 0px 50px;
-        color: white;
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .CLUB-1{
-        grid-row: 3;
-        grid-column: 2/-4;
-        text-align: center;
-        color: white;
-    }
-
-    .CLUB-2{
-        grid-row: 3;
-        grid-column: 3/-3;
-        text-align: center;
-        color: white;
-    }
-    .CLUB-3{
-        grid-row: 3;
-        grid-column: 4/-2;
-        text-align: center;
-        color: white;
-    }
-    /*--=======================body  part-6 End================--*/
-
-    /*--=======================body  part-7 Start================--*/
-
-
-    .row-7{
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .imga-1{
-        grid-row: 1;
-        grid-column: 1/-1;
-        height: 400px;
-        
-        
-
-    }
-    .colar-1{
-        grid-row: 1;
-        grid-column: 1/-1;
-        height: 400px;
-        background-color: #58060696;
-        opacity: .8;
-    }
-
-    .LORM-2{
-        grid-row: 1;
-        grid-column: 2/-2;
-        text-align: center;
-        margin-top: 200px;
-        color: rgb(255, 255, 255);
-    }
-
-    .our-2{
-        grid-row: 1;
-        grid-column: 2/-2;
-        text-align: center;
-        margin-top: 300px;
-        color: rgb(254, 254, 254);
-    }
-
-    /*--=======================body  part-7 End================--*/
-
-    /*--=======================body  part-8 srart================--*/
-    .row-8{
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .BAG-1{
-        grid-row: 1;
-        grid-column: 1/-1;
-        height: 450px;
-        background-color: #FF6306;
-    }
-    .dan-4{
-        grid-row: 1;
-        grid-column: 1/-1;
-        height: 400px;
-    }
-    .bam-4{
-        grid-row: 1;
-        grid-column: 1/-1;
-        height: 450px;
-    }
-    .subsc-1{
-        grid-row: 1;
-        grid-column: 1/-1;
-        text-align: center;
-        margin-top: 100px;
-        color: white;
-    }
-
-    .iprem-1{
-        grid-row: 1;
-        grid-column: 1/-1;
-        text-align: center;
-        margin-top: 160px;
-        color: white;
-        font-size: 15px;
-    }
-    .sub-9{
-        grid-row: 1;
-        grid-column: 1/-1;
-        text-align:left;
-        margin-left: 101px;
-        width: 150px;
-        margin-top: 300px;
-    }
-    .email-1{
-        height: 30px;
-        padding-left: 5px;
-        border: #6a6868 2px solid;
-    }
-    .mit-5{
-        grid-row: 1;
-        grid-column: 1/-2;
-        margin-left: 251px;
-        width: 80px;
-        margin-top: 300px;
-        
-    }
-    
-
-
-    .submite-5{
-        padding: 5px;
-        background-color: #2C2C2C;
-        color: white;
-        cursor:pointer;
-    }
-    
-
-
-    /*--=======================body  part-8 End================--*/
-    /*--=======================  footer-Stat================--*/
-
-
-    .footer-1{
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .ba-1{
-        grid-row: 1;
-        grid-column: 1/-1;
-        background-color: #2B2B2B;
-        height: 370px;
-    }
-
-
-    .musi{
-        grid-row: 1;
-        grid-column: 1/-5;
-        color: white;
-        margin-top: 10px;
-        margin-left: 10px;
-        font-size: 5px;
-
-    }
-    .dolor-1{
-        grid-row: 1;
-        grid-column: 1/-5;
-        color: white;
-        margin-top: 40px;
-        margin-left: 10px;
-        font-size: 10px;
-    }
-
-    .bar-11{
-        grid-row: 1;
-        grid-column: 1/-1;
-        width: 40px;
-        background-color: #2B2B2B;
-        margin-top: 200px;
-        margin-left: 20px;
-    }
-
-    .bar-12{
-        grid-row: 1;
-        grid-column: 1/-1;
-        width: 40px;
-        background-color: #2B2B2B;
-        margin-top: 200px;
-        margin-left: 65px;
-    }
-    .bar-13{
-        grid-row: 1;
-        grid-column: 1/-1;
-        width: 40px;
-        background-color: #2B2B2B;
-        margin-top: 200px;
-        margin-left: 110px;
-    }
-    .bar-14{
-        grid-row: 1;
-        grid-column: 1/-1;
-        width: 40px;
-        background-color: #2B2B2B;
-        margin-top: 200px;
-        margin-left: 155px;
-    }
-
-    .ab-1{
-        grid-row: 1;
-        grid-column: 2/-4;
-        margin-top: 10px;
-        text-align: center;
-        color: white;
-        font-size: 8px;
-    }
-
-    .ab-2{
-        grid-row: 1;
-        grid-column: 2/-4;
-        margin-top: 40px;
-        text-align: center;
-        color: white;
-        padding: 5px;
-        font-size: 10px;
-    }
-
-    .ab-3{
-        grid-row: 1;
-        grid-column: 3/-3;
-        margin-top: 10px;
-        text-align: center;
-        color: white;
-        font-size: 7px;
-    }
-
-    .ab-4{
-        grid-row: 1;
-        grid-column: 3/-3;
-        margin-top: 40px;
-        text-align: center;
-        color: white;
-        padding: 5px;
-        font-size: 10px;
-    }
-
-    .ab-5{
-        grid-row: 1;
-        grid-column: 4/-2;
-        margin-top: 10px;
-        text-align: center;
-        color: white;
-        font-size: 10px;
-    }
-
-    .ab-6{
-        grid-row: 1;
-        grid-column: 4/-2;
-        margin-top: 40px;
-        text-align: center;
-        color: white;
-        padding: 5px;
-        font-size: 10px;
-    }
-    .ZAKIR{
-        grid-row: 1;
-        grid-column: 1/-1;
-        margin-top: 360px;
-        text-align: center;
-        color: white;
-        background-color: #4a4646;
-        padding: 7px;
-        font-size: 30px;
+    background-image: url(../PHOTOS/man.png);
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-size:contain;
+    align-items: start;
+    justify-content: center;
+        background-repeat: no-repeat;
     }
 }
-    /*--=======================  footer-End================--*/
+
+
